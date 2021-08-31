@@ -76,9 +76,6 @@ tipue_search:
          categories: []
          tags: []
 
-# OpenGraph
-logo:                /assets/img/jin.png
-
 # Set to true when building with the `--lsi` option
 # See: https://jekyllrb.com/docs/variables/#site-variables
 # use_lsi:             true
