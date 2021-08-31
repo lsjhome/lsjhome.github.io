@@ -13,6 +13,13 @@
       <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%d %b %Y" }}</time>
       {% include tag-list.html tags=post.categories meta=site.featured_categories start_with="in " separator=" / " %}
       {% include tag-list.html tags=post.tags meta=site.featured_tags start_with="on " separator=", " %}
+      <div style="text-align: center">
+          <a href="https://hits.seeyoufarm.com/{{ site.url | remove_first: 'https://' | remove_first: 'http://' }}{{ page.url }}"
+            target="_blank">
+            <img
+            src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https://{{ site.url | remove_first: 'https://' | remove_first: 'http://' }}{{ page.url }}&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false"/>
+          </a>
+      </div>
     </p>
 
     {% include message.html text=post.description %}
@@ -74,7 +81,7 @@
 </article>
 {% unless include.link_title %}
   <hr class="dingbat" />
-<!--공유, 트위터, 페이스북-->
+<!--Share, Twitter, Facebook-->
   <div class="share">
       <h2>Share this post</h2>
       <div class="share-body">
