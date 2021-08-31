@@ -29,6 +29,7 @@ author:
 image:               /assets/img/main_left.jpg
 color:               '#4f86aa'
 
+
 # The font used for headings. Expects a string that is a valid CSS font-family value.
 font_heading:        "'Merriweather-Light','Lato','-apple-system','Verdana','PingFang SC','Helvetica Neue','Arial','Hiragino Sans GB','Microsoft YaHei','WenQuanYi Micro Hei','sans-serif'"
 
@@ -76,6 +77,12 @@ tipue_search:
          categories: []
          tags: []
 
+
+
+# seo-tag
+logo:                /assets/img/jin.png
+
+
 # Set to true when building with the `--lsi` option
 # See: https://jekyllrb.com/docs/variables/#site-variables
 # use_lsi:             true
@@ -113,6 +120,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-paginate
   - jekyll-redirect-from
+  - jekyll-seo-tag
 
 exclude:
   - README.md
@@ -122,7 +130,6 @@ exclude:
   - package-lock.json
   - Gemfile
   - Gemfile.lock
-  - _posts/study/2020-12-26-making-blog04.md
 
 
 kramdown:
