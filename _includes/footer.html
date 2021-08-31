@@ -1,0 +1,15 @@
+<footer>
+  <hr/>
+{% assign year_from = site.posts[-1].date | date: '%Y' %}
+    {% assign year_to   = site.time | date: '%Y' %}
+    {% if year_from == nil or year_from == year_to %}
+      {% assign year_string = year_from %}
+    {% else %}
+      {% assign from_to_seperator = site.data.strings.from_to_seperator | default: '-' %}
+      {% assign year_string = year_from | append: '&nbsp;' | append: from_to_seperator | append: '&nbsp;' | append: year_to %}
+    {% endif %}
+    <p><small class="copyright">{{ site.copyright | markdownify | replace:'<!--copyyears-->',year_string | replace:'<p>','' | replace:'</p>','' }}</small></p>
+  <p>
+    <code>Powered by <a href="https://lsjhome.github.io/">Jin</a></code>
+  </p>
+</footer>
