@@ -10,7 +10,7 @@ url:                 https://lsjhome.github.io
 
 # Set to '' when hosting a blog on GitHub Pages, ie on `//<username>.github.io`
 # Set to '/<reponame>' when using the `gh-pages` branch of a repository
-baseurl:             ""
+baseurl:             ''
 
 # A very short description of your page
 tagline:             "Full-Stack Data Scientist"
@@ -47,7 +47,7 @@ google_fonts:        Lato
 google_analytics:    G-xxxx
 
 # 댓글기능
-disqus: True
+disqus: False
 disqus_shortname:    xxxx
 
 # This text will appear in the footer of every page. Markdown enabled.
@@ -57,7 +57,7 @@ copyright:             © <!--copyyears--> lsjhome.github.io; All rights reserve
 permalink:           
 
 # Pagination configuration (used by the `blog` layout)
-paginate:            3
+paginate:            5
 paginate_path:       '/page-:num/'
 
 # If you are upgrading form a v5 verison of Hydejack, uncomment the two lines below,
