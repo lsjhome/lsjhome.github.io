@@ -1,6 +1,6 @@
 ---
 layout: tag-blog
-title: Data Engineering (datacamp)
+title: Data Engineering (DataCamp)
 slug: datacamp_de
 category: course
 menu: false
