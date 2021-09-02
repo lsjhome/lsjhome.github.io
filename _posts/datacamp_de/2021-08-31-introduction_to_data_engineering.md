@@ -348,7 +348,7 @@ ingest_product_data.set_downstream(enrich_customer_data)
 
 - Analytics databases
 
-  - SELECCT
+  - SELECT
 
   - OLAP(Online Analytical Processing)
 
