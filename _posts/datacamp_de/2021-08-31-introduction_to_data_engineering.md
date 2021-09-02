@@ -461,7 +461,7 @@ customer_df.customer_id==ratings_per_customer.customer_id
 
 Redshift
 
-- First, send data to s3
+First, send data to s3
 
 ```python
 # Pandas .to_parquet() method
@@ -471,7 +471,8 @@ df.to_parquet("./s3://path/to/bucket/customer.parquet")
 df.write.parquet("./s3://path/to/bucket/customer.parquet")
 ```
 
-- Second, load s3 data into redshift (Standard procedure)
+Second, load s3 data into redshift (standard procedure)
+
 ```sql
 COPY customer
 FROM 's3://path/to/bucket/customer.parquet'
