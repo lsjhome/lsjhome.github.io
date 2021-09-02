@@ -66,7 +66,7 @@ comments: true
 
 ### Star Schema
 
-![image-01](../../assets/img/datacamp/introduction_to_data_engineering/01.png)
+![image-01](../../../../assets/img/datacamp/introduction_to_data_engineering/01.png)
 
 - Dimensions: information on the world (Customer Information)
 - Facts: things that happened (Product Orders)
@@ -75,7 +75,7 @@ comments: true
 
 ### Parallel computing
 
-![image-02](../../assets/img/datacamp/introduction_to_data_engineering/02.png){: width="150" height="150"}
+![image-02](../../../../assets/img/datacamp/introduction_to_data_engineering/02.png){: width="300" height="300"}
 
 
 
@@ -135,7 +135,7 @@ result_df = athlete_events_dask.groupby('Year').Age.mean().compute()
 
 - HDFS: Storage
 
-  ![image-03](../../assets/img/datacamp/introduction_to_data_engineering/03.png)
+  ![image-03](../../../../assets/img/datacamp/introduction_to_data_engineering/03.png)
 
 ### Spark
 
@@ -288,7 +288,7 @@ Tools
 
 Airflow
 
-![image-04](../../assets/img/datacamp/introduction_to_data_engineering/04.png)
+![image-04](../../../../assets/img/datacamp/introduction_to_data_engineering/04.png)
 
 ```python
 # Create the DAG object
@@ -461,6 +461,8 @@ customer_df.customer_id==ratings_per_customer.customer_id
 
 Redshift
 
+- First, send data to s3
+
 ```python
 # Pandas .to_parquet() method
 df.to_parquet("./s3://path/to/bucket/customer.parquet")
@@ -469,6 +471,7 @@ df.to_parquet("./s3://path/to/bucket/customer.parquet")
 df.write.parquet("./s3://path/to/bucket/customer.parquet")
 ```
 
+- Second, load s3 data into redshift (Standard procedure)
 ```sql
 COPY customer
 FROM 's3://path/to/bucket/customer.parquet'
