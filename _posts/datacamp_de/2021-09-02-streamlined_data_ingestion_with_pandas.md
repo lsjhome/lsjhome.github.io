@@ -116,13 +116,14 @@ True
 ```python
 # Load data, casting True/False columns as Boolean
 bool_data = pd.read_excel("fcc_survey_booleans.xlsx",
-													 dtype={"AttendedBootcamp": bool,
-													 "AttendedBootCampYesNo": bool,
-													 "AttendedBootcampTF":bool,
-													 "BootcampLoan": bool,
-													 "LoanYesNo": bool,
-													 "LoanTF": bool},
-													 true_values=["Yes"], false_values=["No"])                         
+                          dtype={
+                            "AttendedBootcamp": bool,
+                            "AttendedBootCampYesNo": bool,
+                            "AttendedBootcampTF":bool,
+                            "BootcampLoan": bool,
+                            "LoanYesNo": bool,
+                            "LoanTF": bool},
+                          true_values=["Yes"], false_values=["No"])
 ```
 
 ### Modifying imports: parsing dates
