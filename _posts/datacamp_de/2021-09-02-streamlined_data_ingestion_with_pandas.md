@@ -162,7 +162,8 @@ print(survey_df.head(3))
 date_cols = {"Part1Start":"Part1StartTime",
              "Part1End":"Part1EndTime","Part2Start": ["Part2StartDate","Part2StartTime"]}
 # Load file, parsing standard and split datetime columns
-survey_df = pd.read_excel("fcc_survey.xlsx", parse_dates=date_cols) print(survey_df.Part2Start.head(3))
+survey_df = pd.read_excel("fcc_survey.xlsx", parse_dates=date_cols)
+print(survey_df.Part2Start.head(3))
 ```
 
 ```shell
